@@ -1,0 +1,368 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+
+
+/* =================================================================== */
+/* [Workshop 0]                                                        */
+/* =================================================================== */
+
+/* Menu -------------------------------------------------------------- */
+.menu-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.menu-container ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.menu-container li{
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+.font-menu {
+  font-family: AutautGrotesk-Regular;
+  font-size: 28px;
+}
+
+.font-menu a {
+  color: black;
+  text-decoration: none;
+}
+
+.font-menu a:hover {
+  color: red;
+}
+
+
+/* Font -------------------------------------------------------------- */
+@font-face {
+  font-family: 'FrivoleTrial-Regular';
+  src: url('./fonts/FrivoleTrial-Regular.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'AutautGrotesk-Regular';
+  src: url('./fonts/AutautGrotesk-Regular.ttf') format('ttf');
+}
+
+
+
+/* =================================================================== */
+/* [Workshop 1]                                                        */
+/* =================================================================== */
+
+/* BG images --------------------------------------------------------- */
+.bgimg-1 {
+  position: relative;
+  background-image: url('./images/image1.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  position: relative;
+  background-image: url('./images/image2.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  position: relative;
+  background-image: url('./images/image5.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 200px;
+}
+
+
+/* Center align ------------------------------------------------------ */
+.display-middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+
+/* Headings ---------------------------------------------------------- */
+/* [em]: a relative unit to the parent element’s font size             */
+h1 {
+  font-family: FrivoleTrial-Regular;
+  font-size: 20em;
+  color: white;
+  font-weight: normal;
+}
+
+h2 {
+  font-family: FrivoleTrial-Regular;
+  font-size: 10em;
+  color: white;
+  font-weight: normal;
+}
+
+h3 {
+  font-family: AutautGrotesk-Regular;
+  font-size: 2em;
+  font-weight: normal;
+  line-height: 1.4;
+}
+
+
+
+/* =================================================================== */
+/* [Workshop 2]                                                        */
+/* =================================================================== */
+
+/* Content ----------------------------------------------------------- */
+/* [The margin & padding properties have four values]                  */
+/* [margin : top right bottom left]                                    */
+/* [padding: top right bottom left]                                    */
+.content {
+  max-width: 1400px;
+  margin: auto auto auto auto;
+  padding: 64px 64px 64px 64px;
+  background: #ffffff;
+}
+
+
+/* Text align -------------------------------------------------------- */
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+
+
+/* =================================================================== */
+/* [Workshop 3-2]                                                      */
+/* =================================================================== */
+
+/* Grid -------------------------------------------------------------- */
+/* [1fr]    : one part of the whole / 100% of the available space      */   
+/* [1fr 1fr]: 2 fractions are 50% each                                 */
+.grid1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+  padding: 0 0 10px 0;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+  padding: 0 0 10px 0;
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+  padding: 0 0 10px 0;
+}
+
+.grid4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+  padding: 0 0 10px 0;
+}
+
+
+
+/* =================================================================== */
+/* [Workshop 4]                                                        */
+/* =================================================================== */
+
+/* iframe: Video ----------------------------------------------------- */
+.iframe-video-16-9 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.iframe-video-responsive {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+/* a tag ------------------------------------------------------------ */
+a {
+  /* color: green;
+  text-decoration: none; */
+}
+
+a:visited {
+  /* color: pink;
+  text-decoration: none; */
+}
+
+a:hover {
+  /* color: red;
+  text-decoration: underline; */
+}
+
+
+
+
+/* =================================================================== */
+/* [Extra work]:1                                                      */
+/* =================================================================== */
+
+/* text: drag color -------------------------------------------------- */
+::selection {
+  color: black;
+  background: red;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: black;
+  background: red;
+}
+
+
+/* Scrollbar --------------------------------------------------------- */
+::-webkit-scrollbar { /* width */
+  width: 10px;
+}
+::-webkit-scrollbar-track { /* Track */
+  background: gray;
+}
+::-webkit-scrollbar-thumb { /* Handle */
+  background: rgb(0,0,0,1);
+  background-clip: padding-box;
+}
+
+
+/* Mobile View ------------------------------------------------------- */
+@media only screen and (max-width:1000px) { /* For tablets: */
+  .font-menu {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-family: FrivoleTrial-Regular;
+    font-size: 8em;
+    color: white;
+    font-weight: normal;
+  }
+
+  h2 {
+    font-family: FrivoleTrial-Regular;
+    font-size: 6em;
+    color: white;
+    font-weight: normal;
+  }
+
+  h3 {
+    font-family: AutautGrotesk-Regular;
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 1.4;
+  }
+
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+  
+  .grid2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+/* =================================================================== */
+/* [Extra work]:2                                                      */
+/* =================================================================== */
+
+/* Javascript: Zoom image -------------------------------------------- */
+.zoomIn {
+  cursor: zoom-in;
+  transition: 0.3s;
+}
+
+/* Javascript: Modal BG ---------------------------------------------- */
+.modalBg {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 6; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  top: 0;
+  left: 0;
+  width: 100% !important; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  cursor: zoom-out;
+}
+
+.modalBg::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Javascript: Modal Content (image) ---------------------------------- */
+.modalImg {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 1500px;
+  padding-bottom: 100px;
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0.9)}
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0.9)}
+  to {transform:scale(1)}
+}

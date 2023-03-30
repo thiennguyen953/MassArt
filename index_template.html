@@ -1,0 +1,193 @@
+<!-- ====================================================================== -->
+<!-- [Intro]                                                                -->
+<!-- ====================================================================== -->
+<!-- * <!DOCTYPE html>: Hey browser! This document is written in HTML 5!    -->
+<!-- ---------------------------------------------------------------------- -->
+<!-- * Almost all tags contain two parts, an opening, and a closing tag     -->
+<!--   (ex: <html> is the opening tag and </html> is the closing tag)       --> 
+<!-- ---------------------------------------------------------------------- -->
+<!-- * <head>: Container for metadata (ex: title, styles, character set)    -->
+<!-- * <meta charset="UTF-8">: You write text in all kinds of languages     -->
+<!-- * <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+<!--   : You can make your website as a responsive website                  -->
+<!-- ---------------------------------------------------------------------- -->
+<!-- * <link rel="stylesheet" href="style_template.css">                    -->
+<!--   : I want to import my CSS file                                       -->
+<!--                                                                        -->
+<!-- * <link rel="shortcut icon" href="favicon.png">                        -->
+<!--   : I want to import my favicon                                        -->
+<!-- ---------------------------------------------------------------------- -->
+<!-- * <body>: Contain all the contents (ex: paragraphs, images, hyperlinks)-->
+<!-- ====================================================================== -->
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Your webstie title here</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">   
+    <link rel="stylesheet" href="style_template.css">    
+    <link rel="shortcut icon" href="favicon.png">
+  </head>
+
+
+
+
+  <body>
+
+    <!-- ========================================================================= -->
+    <!-- [Workshop 0]                                                              -->
+    <!-- ========================================================================= -->
+    <!-- * <ul> : Container for an unordered (bulleted) list                       -->
+    <!-- * <li> : List items                                                       -->
+    <!-- * <a>  : Link one page to another page                                    -->
+    <!-- ------------------------------------------------------------------------- -->
+    <!-- * <div>: Group elements                                                   -->
+    <!--        : Divide a significant part of an HTML document from other parts   -->
+    <!-- ------------------------------------------------------------------------- -->
+    <!-- * id   : Identify "one" HTML element (# + ID name)                        -->
+    <!-- * class: Can apply to "multiple" HTML elements (. + Class name)           -->
+    <!-- ------------------------------------------------------------------------- -->
+    <!-- * <style>: Define style information (CSS) for a document                  --> 
+    <!-- ========================================================================= -->
+
+    <div class="menu-container font-menu">
+      <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#exhibitions">EXHIBITIONS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+
+
+
+
+    <!-- ========================================================================= -->
+    <!-- [Workshop 1]                                                              -->
+    <!-- ========================================================================= -->
+    <!-- * <h1> ~ <h6>: Define the heading of the HTML document                    -->
+    <!--              : <h1> defines the most important tag                        -->
+    <!--              : <h6> defines the least important tag                       -->
+    <!-- ========================================================================= -->
+
+    <div id="home" class="bgimg-1">
+      <div class="display-middle">
+        <h1>Let your imagination run wild</h1>
+      </div>
+    </div>
+
+
+
+
+    <!-- ======================================================================= -->
+    <!-- [Workshop 2]                                                            -->
+    <!-- ======================================================================= -->
+    <!-- * margin : Control the space outside an element                         -->
+    <!-- * padding: Controls the space inside an element                         -->
+    <!-- ----------------------------------------------------------------------- -->
+    <!-- * background color: https://mycolor.space                               -->
+    <!-- ======================================================================= -->
+
+    <div id="about" class="content">
+      <h3 class="center">ABOUT</h3>
+      <div class="grid1">
+        <h3>
+          The MassArt Art Museum (MAAM) is Boston’s newest museum, a space to experience works by visionary artists at the forefront of contemporary art. As MassArt's teaching museum, we are committed to educating and empowering the next generation of artists—both on our campus and throughout the world.
+        </h3>
+      </div>
+    </div>
+
+
+
+
+    <!-- ======================================================================= -->
+    <!-- [Workshop 3-1]                                                          -->
+    <!-- ======================================================================= -->
+
+    <div class="bgimg-2">
+      <div class="display-middle">
+        <h2>Open Thursday at 12p</h2>
+      </div>
+    </div>
+
+
+
+
+    <!-- ======================================================================= -->
+    <!-- [Workshop 3-2]                                                          -->
+    <!-- ======================================================================= -->
+    <!-- * <br>: Break lines                                                     -->
+    <!-- ======================================================================= -->
+
+    <div id="exhibitions" class="content">
+      <h3 class="center">EXHIBITIONS</h3>
+
+      <div class="grid1">
+          <img src="./images/image3.png" class="zoomIn" style="width: 100%;">
+      </div>
+      <div class="grid2">
+          <img src="./images/image4.png" onclick="onClick(this)" class="zoomIn" style="width: 100%;">
+          <img src="./images/image2.png" onclick="onClick(this)" class="zoomIn" style="width: 100%;">
+      </div>
+
+      <div class="grid2">
+        <h3>
+          Jace Clayton<br>
+          They Are Part<br>
+          February 23–July 30, 2023<br>
+        </h3>
+        <h3>
+          Jace Clayton creates multisensory experiences that explore the unexpected and conversational nature of music from around the world. Interested in how sounds have and define social meaning, Clayton pens musical compositions, creates new audio instruments, and constructs participatory installations. They Are Part brings together three of Clayton’s works that interweave memories, sound, and public spaces, to create what he describes as “those waves of magic that happen when the human spirit joins with technology.”
+        </h3>
+      </div>
+      
+    </div>
+
+
+
+
+    <!-- ======================================================================= -->
+    <!-- [Workshop 4]                                                            -->
+    <!-- ======================================================================= -->
+    <!-- * iframe (Google Maps): https://www.maps.ie/create-google-map           -->
+    <!-- ======================================================================= -->
+    <div class="bgimg-3">
+      <div class="display-middle">
+        <h2>Contact</h2>
+      </div>
+    </div>
+
+    <div id="contact" class="content">
+      <div style="width: 100%">
+        <iframe width="100%" height="300px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=MassArt%20Art%20Museum,%20621%20Huntington%20Ave,%20Boston,%20MA%2002115+(RISD%20Museum)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">measure acres/hectares on map</a></iframe>
+      </div>
+
+      <h3 class="center">
+        <a href="https://www.google.com/maps/search/621+HUNTINGTON+AVENUE,+BOSTON,+MA+02115/@42.3381813,-71.1030588,18z/data=!3m1!4b1" target="_blank">621 HUNTINGTON AVENUE, BOSTON, MA 02115</a><br>
+        <a href="mailto: maam@massart.edu">MAAM@MASSART.EDU</a> | 617 879 7333
+      </h3>
+    </div>
+
+
+
+
+    <!-- ======================================================================= -->
+    <!-- [Extra work]:2                                                          -->
+    <!-- ======================================================================= -->
+    <!-- * <script type="text/javascript" src="script.js"></script>             -->
+    <!--   : I want to import my Javascript file                                -->
+    <!-- ====================================================================== -->
+    <button class="zoomOut"></button>
+    <div id="modal" class="modalBg">
+      <img id="zoomImg" class="modalImg">
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>   
+
+
+
+    
+  </body>
+</html>
